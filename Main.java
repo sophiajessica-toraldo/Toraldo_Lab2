@@ -22,7 +22,7 @@ class Cylinder {
     //Compute the area of the cylinder using Area() method
     public double Area(double radius, double height) {
         //Formula for the area of cylinder
-        return (2 * Math.PI * radius * radius) + (2 * Math.PI * height);
+        return (2 * Math.PI * radius * radius) + (2 * Math.PI * radius) * height;
     }
     
 }
@@ -32,7 +32,7 @@ class CylinderVol extends Cylinder {
     //Compute the volume of the cylinder using Volume() method
     public double Volume(double radius, double height) {
         //Formula for the volume of cylinder
-        return Math.PI * radius * radius * (2 * height);
+        return Math.PI * radius * radius * height;
     }
 }
 
